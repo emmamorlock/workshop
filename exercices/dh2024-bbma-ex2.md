@@ -23,7 +23,7 @@ It's the second tutorial of the series of 3.
 <br />
 <br />
 
-## Step 1 - create or open a project
+## Step 1 - Create or open a project
 
 For this tutorial you will either open the project created with tutorial n°1 and create a new project with the file called `biblissima-cleaned.csv'.
 
@@ -32,7 +32,7 @@ The following steps present different ways you can try improving the reconciliat
 <br />
 <br />
 
-## Step 2 - Reconciling againts a specific type 
+## Step 2 - Reconcile a column againts a specific type 
 
 As our data mixes different category of entities (persons, places, descriptors and shelfmarks), we chose the option "Reconcile against no particular type" for the first iteration. Now we will try to use facets to reconcile for each type of name.
 
@@ -59,7 +59,7 @@ Note:
 <br />
 <br />
 
-## Step 3 - Reconciling with additional columns in your source dataset
+## Step 3 - Reconcile with indication of additional columns in the source dataset
 
 When your dataset contains pieces of information that can help disambiguate the entities, it's recommended to have OpenRefine take them into account in reconciliation process. You just need to map the other columns with the schema of the reconciliation service. 
 
@@ -108,7 +108,7 @@ Alternatively, you could proceed in steps with the menu commands:
 
 > Edit columns ---> Split into several columns
 
-> Type '(' as a separator
+> Type `(` as a separator
 
 > This creates two colums. Delete the second one and transform the first with:
 
