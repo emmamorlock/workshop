@@ -1,4 +1,5 @@
 # 2 OpenRefine reconciliation with Biblissima - Tutorial 2 
+
 This tutorial will walk you through some possible steps to improve the results of a first iteration in a reconciliation process with OpenRefine. 
 
 This  work is licenced under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0) Licence.
@@ -19,6 +20,8 @@ It's the second tutorial of the series of 3.
 - This tutorial was designed using OpenRefine 3.8.2 but it should be compatible with other supported versions.
 - As input file we use an CSV (comma separated value) file called `biblissima_cleaned.csv'.
 
+<br />
+<br />
 
 ## Step 1 - create or open a project
 
@@ -26,16 +29,23 @@ For this tutorial you will either open the project created with tutorial n°1 an
 
 The following steps present different ways you can try improving the reconciliation results, starting with the most simple. But there is no obligation to apply them in that order. 
 
+<br />
+<br />
 
 ## Step 2 - Reconciling againts a specific type 
 
 As our data mixes different category of entities (persons, places, descriptors and shelfmarks), we chose the option "Reconcile against no particular type" for the first iteration. Now we will try to use facets to reconcile for each type of name.
 
-1. Start with duplicating the "Name" column to keep the original data, as we did in the first tutorial 
+1. Start with duplicating the "Name" column to keep the original data, as we did in the first tutorial
+
 2. Use a textual facet to group the rows by type and reconcile each type one after the other:
+   
 > Create a text facet on the 'Type' column
+
 > Display the Facet / Filter tab in the left part of the screen
+
 > Click on an item in the Type facet (e.g. "Descripteur" – "Descriptor" in English)
+
 > Reconcile against the corresponding type.
 
 For comparison purposes, you will dedicate a specific column for each reconciliation by type.In particular, see how the 'cardinal' value was processed with different types. For example, compare the results with a reconciliation as a descriptor (Q304387) or as a human being (Q168).
@@ -43,48 +53,71 @@ For comparison purposes, you will dedicate a specific column for each reconcilia
 The page about entity types [Project:types d'entités](https://data.biblissima.fr/w/Project:Types_d%27entités) on data.biblissima gives you the list of available entity types. Hover on the labels to get the QID if the auto-completion is not sufficient.
 
 Note: 
+
 > you don't have to limit yourself to the types detected by OpenRefine. You can indicate any other category existing in the schema. To reconcile against another category, enter its name or QID in the field "Reconcile against type:"
 
+<br />
+<br />
 
 ## Step 3 - Reconciling with additional columns in your source dataset
 
 When your dataset contains pieces of information that can help disambiguate the entities, it's recommended to have OpenRefine take them into account in reconciliation process. You just need to map the other columns with the schema of the reconciliation service. 
 
 Typically, the birth and death dates are very helpful to reconcile person names. 
+
 Test it on our example dataset:
 
 > Use the type facet 'person' to navigate to the list of person names
+
 > Duplicate the label column and name it "persons with dates" for example
+
 > Start a new reconciliation iteration
+
 > Type "date de naissance " in the field next to the column name "YearBirth" in the right halft of the window and select suggested value (the one with the "P57" property code)
+
 > Do the same for the death date and map the column "YearDeath" with the value "Date de mort P62"
-> Start the reconciliation 
+
+> Start the reconciliation
+
 > Observe that all the names with birth and death dates were automatically matched this time
 
+<br />
+<br />
 
 ## Step 4 - Correct or amend the data
 
 Sometimes the most efficient thing to do is to modify the entity names you want to reconcile. 
 
 1. This can be done manually in the dialog box that opens when you click on the "edit" button displayed when you hover on the cell. For example, if you corrected the label "Christine de Piza, 1364?-1430?" with the string ("Christine de Pizan"), it will be reconciled with a score of 100.
+   
 2. The modification can be done on the fly for the entire dataset with an expression. Expressions can be written in Openrefine's own GREL language (_Google Refine Expression Language, or General Refine Expression Language_), in Jython (Python's implementation in Java) or in Clojure. GREL is easier to use for simple use cases. 
 
 For example, if you want to delete the dates in the labels, you can use a regular expression in a cell transformation of the label column:
 
-   > Edit cells ---> Transform... 
-   > enter the regular expresion: `value.replace(/\((?<=\()[^)]+(?=\))\)/,'')`
-   > click OK
-   > Edit cells ---> Common transforms ---> Trim leading and trailing whitespace
-   > Reconcile ---> Start reconciling…
+> Edit cells ---> Transform...
+
+> Enter the regular expresion: `value.replace(/\((?<=\()[^)]+(?=\))\)/,'')`
+
+> Click OK
+
+> Edit cells ---> Common transforms ---> Trim leading and trailing whitespace
+
+> Reconcile ---> Start reconciling…
    
 Alternatively, you could proceed in steps with the menu commands:
 
 > Edit columns ---> Split into several columns
-> Type '(' a a separator
+
+> Type '(' as a separator
+
 > This creates two colums. Delete the second one and transform the first with:
+
 >  Edit cells ---> Common transforms ---> Trim leading and trailing whitespace
+
 > Then reconcile again.
 
+<br />
+<br />
 
 ## Step 5 - Alternative methods for checking and validating the results
 
@@ -92,5 +125,7 @@ This manual way of processing to validate the results of a reconciliation iterat
 
 OpenRefine offers you alternative commands to perform bulk changes. These are accessible in the submenu "Action" of the "Reconcile" menu entry. 
 
-To experiment with this functionality on a larger dataset, you might want to "Match each cell with its best candidate" or using facets, decide that only cells with a score > 80 % can be matched automatically, the rest having to be checked and validated manually. For that you will use the slider in the facets tab that lets you target the threshold.
+To experiment with this functionality on a larger dataset, you might want to "Match each cell with its best candidate" or using facets, decide that only cells with a score over 80 % can be matched automatically, the rest having to be checked and validated manually. 
+
+Do do that you will use the slider in the facets tab that lets you target the threshold.
 
