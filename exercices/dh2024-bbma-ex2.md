@@ -13,7 +13,7 @@ It's the second tutorial of the series of 3.
 **Reconciliation services** allow you to look up terms in a local dataset against external services and reuse the data from these external datasets in combination with your data. The exercices in this tutorial will be using the reconciliation service of **data.biblissima**, a database of  semantic authorities in the domain of ancient written heritage. Since **data.biblissima** uses the same database management system as Wikidata (Wikibase) it offers a very similar reconciliation service (more information on the service via this list of reconciliations services presented on the Openrefine online documentation).
 
 **In this Tutorial n°2, you will learn**:
-- Improve the result of a first reconciliation iteration  done on a given dataset with the data.biblissima's reconciliation service.
+- How to improve the result of a previous reconciliation iteration with the data.biblissima's reconciliation service.
 
 **Requirements for this tutorial**:
 - Install **OpenRefine** on your operating system from the [official website](https://openrefine.org/download.html) then proceed to installation following the []()[]()[instructions](https://openrefine.org/docs/manual/installing). The Java Runtime Environment (JRE) is required.
