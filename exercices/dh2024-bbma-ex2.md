@@ -1,6 +1,5 @@
 # 2 OpenRefine reconciliation with Biblissima - Tutorial 2 
 <br />
-<br />
 
 This tutorial will walk you through some possible steps to improve the results of a first iteration in a reconciliation process with OpenRefine. 
 
