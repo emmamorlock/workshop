@@ -256,6 +256,8 @@ To produce the two lists structured as the example above, we will proceed in two
 - Row separator: leave empty
 - Row template: copy and paste the the pattern and add the reference to the column row with that pattern: `${name-of-the-column}`
 
+Copy and paste in the `Row template` central field of the form:
+
 ```
  <place xml:id="${xml:id}">
         <placeName>${name}</placeName>
@@ -270,10 +272,10 @@ The templating exporter window displays a preview of the result on the right par
 The result of the export operation is presented in a window of your default text editor. 
 Copy the result and paste it in your biblissima.xml source file in a new standoff element, as a direct child of the root element TEI.
 
-Do the same thing for persons
+Do the same thing for persons.
 
 ```
-<person corresp="${xml:id}">
+<person xml:id="${xml:id}">
         <persName>${name}</persName>
         <idno type="data.biblissima">https://data.biblissima.fr/w/Item:${bbma-QID}</idno>
         <idno type="portail.biblissima">${Link to bbma portal}</idno>
