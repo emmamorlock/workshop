@@ -1,4 +1,7 @@
-# 1 OpenRefine reconciliation with Biblissima - Tutorial 1
+# OpenRefine reconciliation with Biblissima - Tutorial 1
+
+<br />
+
 This tutorial will walk you through the basic steps of a reconciliation process with OpenRefine. It was written by Emmanuelle Morlock, with the collaboration of the technical Team of the projet Biblissima (Kevin Bois, Eduard Frunzeanu and Régis Robineau) to serve as a handout during this [DH2024 workshop](https://dh2024.adho.org/program/workshops/). 
 
 It's the first tutorial in a series of 3.
