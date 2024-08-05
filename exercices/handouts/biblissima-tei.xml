@@ -1,0 +1,101 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><?teipublisher odd="graves.odd" template="letter.html" media="latex epub print fo"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" n="Ca">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Biblissima riches heures - exercice </title>
+         </titleStmt>
+         <publicationStmt>
+            <ab/>
+         </publicationStmt>
+         <sourceDesc>
+            <ab>born digital - Source information: https://fr.wikipedia.org/wiki/Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry</ab>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         <!--
+         <particDesc>
+          
+            <listPerson><person xml:id="n01">
+               <persName>John, Duke of Berry</persName>
+               <idno type="biblissima">https://data.biblissima.fr/w/Item:Q8231</idno>               
+               <figure>
+                  <graphic url="null"/>
+                  <ab type="caption">null</ab>
+               </figure>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="n21">
+                  <placeName xml:id="en">France</placeName>
+                  <location>
+                     <geo>null null</geo>
+                  </location>
+               </place>
+               
+            </listPlace>
+         </settingDesc>
+         -->
+      </profileDesc>
+
+   </teiHeader>
+
+   <text>
+      <body>
+         <div xml:lang="en">
+            <p>The <title>Très Riches Heures du Duc de Berry</title> (French pronunciation: [tʁɛ
+               ʁiʃz‿œʁ dy dyk də beʁi]; English: The Very Rich Hours of the Duke of Berry), or
+                  <title>Très Riches Heures</title>, is an illuminated manuscript that was created
+               between c. 1412 and 1416. It is considered a book of hours, which is a type of
+               Christian devotional book or a collection of prayers that was said at canonical
+               hours. The manuscript was created for <name type="person" ref="#name_gzw_vfw_2cc"
+                  >John, Duke of Berry</name>, the brother of <name type="person"
+                     ref="#name_jjs_dgw_2cc">King Charles V of France</name>, 
+               by <name type="person" ref="#name_vxh_fgw_2cc">Limbourg brothers Paul, Johan and Herman.</name> The
+               book is now <idno>MS 65</idno> in the Musée Condé, <name type="place"
+                  ref="#name_w4c_sgw_2cc">Chantilly</name>, <name type="place"
+                  ref="#name_j53_sgw_2cc">France</name>. </p>
+            <p>(...)</p>
+            <p> When the <name type="person" ref="#name_vxh_fgw_2cc">Limbourg brothers</name> and
+               their sponsor died in 1416 (possibly victims of plague) the manuscript was left
+               unfinished. It was further added upon in the 1440s by an anonymous painter, who many
+               art historians believe was <name type="person" ref="#name_yjf_tgw_2cc">Barthélemy
+                  d'Eyck</name>. In 1485–1489, it was brought to its present state by the painter
+                  <name type="person" ref="#name_ljw_tgw_2cc">Jean Colombe</name> on behalf of
+                  <name type="person" ref="#name_rn4_5gw_2cc">the Duke of Savoy</name>. It was
+               acquired by the <name type="person" ref="#name_u2w_5gw_2cc">Duc d'Aumale</name> in
+               1856.</p>
+         </div>
+         <!--<div xml:lang="fr">
+            <p>Les <title>Très Riches Heures du duc de Berry</title> sont un livre d'heures commandé
+               par le <name type="person" xml:id="name_err_vgw_2cc">duc Jean Ier de Berry</name> et
+               actuellement conservé au musée Condé à
+                     <name type="place" xml:id="name_ut1_2hw_2cc">Chantilly</name> (<name
+                     type="place" xml:id="name_lkz_wgw_2cc">France</name>) sous la <idno>cote
+                  Ms. 65</idno>.</p>
+            <p> Il est commandé par le <name type="person" xml:id="name_jkv_xgw_2cc">duc de
+                  Berry</name> aux <name type="person" xml:id="name_bvb_ygw_2cc">frères Paul, Jean
+                  et Herman de Limbourg</name> vers 1410-1411. Inachevé à la mort des trois peintres
+               et de leur commanditaire en 1416, le manuscrit est probablement complété, dans
+               certaines miniatures du calendrier, par un peintre anonyme dans les années 1440.
+               Certains historiens de l'art y voient la main de <name type="person"
+                  xml:id="name_sbq_ygw_2cc">Barthélemy d'Eyck</name>. En 1485-1486, il est achevé
+               dans son état actuel par le peintre <name type="person" xml:id="name_vvl_zgw_2cc"
+                  >Jean Colombe</name> pour le compte du <name type="person"
+                  xml:id="name_q4s_zgw_2cc">duc de Savoie</name>. Acquis par le <name type="person"
+                  xml:id="name_sbx_ygw_2cc">duc d'Aumale</name> en 1856, il est toujours conservé
+               dans son château de <name type="place"
+                     xml:id="name_hl1_1hw_2cc">Chantilly</name>, dont il ne peut sortir, en
+               raison des conditions du legs du duc.</p>
+         </div>-->
+
+      </body>
+   </text>
+</TEI>
