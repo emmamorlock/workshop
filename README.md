@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14055233.svg)](https://doi.org/10.5281/zenodo.14055233)
 # Workshop DH2024 Data Reconciliation with OpenRefine and Biblissima wikibase data
 DH 2024 Workshop exercices and handout files.
 Title of the workshop: "Aligner, vérifier et enrichir des jeux de données sur le patrimoine écrit ancien : découvrir et pratiquer le web service de réconciliation pour OpenRefine de Biblissima".
