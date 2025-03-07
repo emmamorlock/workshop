@@ -15,4 +15,4 @@ The workshop was prepared by the Biblissima technical team. It was facilitated b
 
 *This work was carried out with support from Biblissima+, funded by the French government and managed by the ANR under the "Investments for the Future" program as part of France 2030, with reference ANR-21-ESRE-0005.*
 
-Licence: CC BY 4.0
+Licence: Emmanuelle Morlock 2024 - CC BY 4.0
